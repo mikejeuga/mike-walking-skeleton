@@ -1,6 +1,7 @@
 package server
 
 import (
+	"fmt"
 	"github.com/gorilla/mux"
 	"net/http"
 )
@@ -21,5 +22,5 @@ func NewServer() *http.Server {
 }
 
 func (s *Server) Home(w http.ResponseWriter, r *http.Request) {
-
+	fmt.Fprintf(w, "I am the skeleton walking!")
 }

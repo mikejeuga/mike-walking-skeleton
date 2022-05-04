@@ -18,4 +18,5 @@ func TestServer(t *testing.T) {
 	walkingServer.Handler.ServeHTTP(recorder, request)
 
 	is.Equal(recorder.Code, http.StatusOK)
+	is.Equal(recorder.Body.String(), "I am the skeleton walking!")
 }
