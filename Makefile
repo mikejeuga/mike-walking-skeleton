@@ -1,7 +1,6 @@
 test:
 	go test -v ./...
 
-
-git-commit:
+commit:
 	git commit -am "$m"
 	git push
